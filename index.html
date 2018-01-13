@@ -1,0 +1,90 @@
+<!-- Our project "NorthStar Events" is an event finder website specifically catering towards events in Minnesota that allows people to view the weather and then search appropriate local events by keywords and then schedule those events via Google Calendar. Created by: Paul Prokosch, Derek Frand, Derek Jacobson, Alycia Riley, Carl Liu. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- CARL WAS HERE -->
+<head>
+    <meta charset="UTF-8">
+    <title>NorthStar Events</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Englebert" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/northstar.png">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<!-- Logo + Slogan -->
+<body class="wrap">
+    <div class="jumbotron">
+        <h1 id="logo">NorthStar Events</h1>
+        <br>
+        <br>
+        <p id="slogan">No excuse. Get up and enjoy life! </p>
+    </div>
+    <br>
+    <br>
+
+    <!-- Search form + Filters + Search Button -->
+    <div class="search">
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="inlineFormInputName">Location</label>
+                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Location">
+                </div>
+                <div class="col-sm-2 my-1">
+                    <label class="sr-only" for="inlineFormInputGroupUsername">Date</label>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Date">
+                </div>
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="inlineFormInputGroupUsername">Catergory</label>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Catergory">
+                </div>
+                <div class="col-sm-2 my-1">
+                    <label class="sr-only" for="inlineFormInputGroupUsername">Free?</label>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Free Yes/No">
+                </div>
+                <div class="col-auto my-1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                        <label class="form-check-label" for="autoSizingCheck2">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Place-holder img for Catergories + Links to Catergories -->
+    <div class="section group">
+        <div class="col span_1_of_5">
+            <img src="http://via.placeholder.com/300x250" alt="">
+            <a href=""><h4>Sporting Events</h4></a>
+        </div>
+        <div class="col span_1_of_5">
+            <img src="http://via.placeholder.com/300x250" alt="">
+            <a href=""><h4>Concerts</h4></a>
+        </div>
+        <div class="col span_1_of_5">
+            <img src="http://via.placeholder.com/300x250" alt="">
+            <a href=""><h4>Top 10 Events</h4></a>
+        </div>
+        <div class="col span_1_of_5">
+            <img src="http://via.placeholder.com/300x250" alt="">
+            <a href=""><h4>Food & Drink</h4></a>
+        </div>
+        <div class="col span_1_of_5">
+            <img src="http://via.placeholder.com/300x250" alt="">
+            <a href=""><h4>Museums/Art galleries</h4></a>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../NorthStar_Events/app.js"></script>
+
+</body>
+
+</html>
