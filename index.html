@@ -1,90 +1,126 @@
 <!-- Our project "NorthStar Events" is an event finder website specifically catering towards events in Minnesota that allows people to view the weather and then search appropriate local events by keywords and then schedule those events via Google Calendar. Created by: Paul Prokosch, Derek Frand, Derek Jacobson, Alycia Riley, Carl Liu. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <!-- CARL WAS HERE -->
+
 <head>
     <meta charset="UTF-8">
     <title>NorthStar Events</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Englebert" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/images/northstar.png">
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<!-- Logo + Slogan -->
-<body class="wrap">
+<body>
+    <!-- Logo + Slogan -->
     <div class="jumbotron">
         <h1 id="logo">NorthStar Events</h1>
         <br>
         <br>
-        <p id="slogan">No excuse. Get up and enjoy life! </p>
+        <p id="slogan">No excuse. Get out and enjoy life! </p>
     </div>
     <br>
     <br>
-
-    <!-- Search form + Filters + Search Button -->
+    <!-- Search-form -->
     <div class="search">
-        <form>
-            <div class="form-row align-items-center">
-                <div class="col-sm-3 my-1">
-                    <label class="sr-only" for="inlineFormInputName">Location</label>
-                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Location">
+        <form action="#">
+            <!-- Location drop-down -->
+            <div class="input-field search-event" id="location">
+                <select multiple>
+                    <option value="" disabled selected>Choose your options</option>
+                    <option value="1">Minneapolis</option>
+                    <option value="2">St. Paul</option>
+                    <option value="3">Maplewood</option>
+                </select>
+            </div>
+            <!-- Categories drop-down -->
+            <div class="input-field search-event" id="categories">
+                <select class="icons">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1" data-icon="assets/images/sports.jpg">Sports</option>
+                    <option value="2" data-icon="assets/images/concerts.jpg">Concerts</option>
+                    <option value="3" data-icon="assets/images/restaurants.png">Restaurants</option>
+                </select>
+            </div>
+            <!-- Calendar Event pop-up -->
+            <div class="search-event" id="date">
+                <input type="text" class="datepicker" placeholder="Date">
+            </div>
+            <!-- Check boxes Free + Remember Me -->
+            <div class="search-event">
+                <div class="checkBox">
+                    <input type="checkbox" id="free" />
+                    <label for="free">
+                        Free
+                    </label>
                 </div>
-                <div class="col-sm-2 my-1">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">Date</label>
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Date">
+                <div class="checkBox">
+                    <input type="checkbox" id="remember-me" />
+                    <label for="remember-me">
+                        Remember Me
+                    </label>
                 </div>
-                <div class="col-sm-3 my-1">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">Catergory</label>
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Catergory">
-                </div>
-                <div class="col-sm-2 my-1">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">Free?</label>
-                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Free Yes/No">
-                </div>
-                <div class="col-auto my-1">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
-                        <label class="form-check-label" for="autoSizingCheck2">
-                            Remember me
-                        </label>
-                    </div>
-                </div>
-                <div class="col-auto my-1">
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </div>
+            </div>
+            <!-- Search button -->
+            <div class="search-event">
+                <button type="submit" class="btn btn-primary">Search</button>
             </div>
         </form>
     </div>
-
-    <!-- Place-holder img for Catergories + Links to Catergories -->
-    <div class="section group">
-        <div class="col span_1_of_5">
-            <img src="http://via.placeholder.com/300x250" alt="">
-            <a href=""><h4>Sporting Events</h4></a>
+    <!-- Catergories + Images + Links to Catergories -->
+    <div class="row">
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/sportingevents.jpg">
+                    <span class="card-title">Sporting Events</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
-        <div class="col span_1_of_5">
-            <img src="http://via.placeholder.com/300x250" alt="">
-            <a href=""><h4>Concerts</h4></a>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/concerts2.jpg">
+                    <span class="card-title">Concerts</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
-        <div class="col span_1_of_5">
-            <img src="http://via.placeholder.com/300x250" alt="">
-            <a href=""><h4>Top 10 Events</h4></a>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/museum.jpg">
+                    <span class="card-title">Museums & Galleries</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
-        <div class="col span_1_of_5">
-            <img src="http://via.placeholder.com/300x250" alt="">
-            <a href=""><h4>Food & Drink</h4></a>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/restaurant.jpg">
+                    <span class="card-title">Restaurants</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
-        <div class="col span_1_of_5">
-            <img src="http://via.placeholder.com/300x250" alt="">
-            <a href=""><h4>Museums/Art galleries</h4></a>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img src="assets/images/top-10.jpg">
+                    <span class="card-title">Top 10</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
     </div>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../NorthStar_Events/app.js"></script>
-
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- Can use Materialize for Js -->
+    <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
 </body>
 
 </html>
