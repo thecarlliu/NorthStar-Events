@@ -1,11 +1,13 @@
 /*color palette
 ========================================
-light orange- #F6BA4D
-darker orange - #E16C29
-Darkest Blue - #0D4479
-Medium blue - #0BA2AE
-light blue - #6aCBD3
-Lightest Blue - #D8E8DF*/
+light orange- #F6BA4D - amber lighten-5
+darker orange - #E16C29 - amber darken-3
+Darkest Blue - #0D4479 - blue darken-4
+Medium blue - #0BA2AE - blue lighten-1
+light blue - #6aCBD3 - blue lighten-3
+Lightest Blue - #D8E8DF - blue lighten-5
+
+*/
 
 /*Fonts
 ===================================
@@ -27,19 +29,50 @@ font-family: 'Lato', sans-serif;
   color: var(--main-color); 
 }*/
 
+
+
 /* Logo + Slogan*/
-#nav-bar {
-    height: 900px;
+
+
+
+div.background {
+    background: url("../images/minneapolis_mississippi_river.jpg") repeat;
+    height:300px;
+    width: 100%;
+    margin-top: 0px;
+    border: 2px solid #000;
 }
 
-.brand-logo {
+div.transbox {
+  margin-top: 180px;
+    margin-bottom: 0px;
+  background-color: #ffffff;
+
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+#logo {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 90px;
+    display: inline;
+    
+    
 }
 
-.slogan {
+#slogan {
 	font-family: 'Lato', sans-serif;
-	font-size: 45px;
+	font-size: 25px;
+    display: inline;
+    float: right;
+    line-height: 150px;
 }
 
  /* Search Input */
@@ -49,19 +82,13 @@ font-family: 'Lato', sans-serif;
 	margin-top: 1%;
 }
 
-#categories {
-	width: 10%;
-}
-
 #location {
-	width: 10%;
+	width: 15%;
 }
 
-#date {
-	margin-top: 1%;
-	cursor: pointer;
+#nav-image {
+    height: 200px;
+    width: 100%;
+    opacity: .85;
 }
 
-input::-webkit-input-placeholder {
-color: black !important;
-}
