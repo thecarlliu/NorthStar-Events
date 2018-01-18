@@ -24,104 +24,111 @@
     <br>
     <br>
     <!-- Search-form -->
+    <!--  to do list 
+    Order of search form.
+         Search box
+         Location 
+         Date drop down
+         Free
+         Submit 
+          -->
     <div class="row search">
         <form action="#">
-            <!-- Location drop-down -->
-            <div class="input-field search-event" id="location">
-                <select multiple>
-                    <option value="" disabled selected>Choose your Location</option>
-                    <option value="1">Minneapolis</option>
-                    <option value="2">St. Paul</option>
-                    <option value="3">Maplewood</option>
-                </select>
-            </div>
-            <!-- Categories drop-down -->
-            <div class="input-field search-event" id="categories">
-                <select class="icons">
-                    <option value="" disabled selected>Choose your Category</option>
-                    <option value="1" data-icon="assets/images/sports.jpg">Sports</option>
-                    <option value="2" data-icon="assets/images/concerts.jpg">Concerts</option>
-                    <option value="3" data-icon="assets/images/restaurants.png">Restaurants</option>
-                </select>
-            </div>
-            <!-- Calendar Event pop-up -->
-            <div class="search-event" id="date">
-                <input type="text" class="datepicker" placeholder="Date">
-            </div>
-            <!-- Check boxes Free + Remember Me -->
-            <div class="search-event">
-                <div class="checkBox">
-                    <input type="checkbox" id="free" />
-                    <label for="free">
-                        Free
-                    </label>
+            <!-- Search Box -->
+            <div class="row">
+                <div class="input-field col s2">
+                    <input id="input_text" type="text" data-length="10">
+                    <label for="input_text">Search</label>
                 </div>
-                <div class="checkBox">
-                    <input type="checkbox" id="remember-me" />
-                    <label for="remember-me">
-                        Remember Me
-                    </label>
+                <!-- Location drop-down -->
+                <div class="input-field search-event" id="location">
+                    <select multiple>
+                        <option value="" disabled selected>Choose your Location</option>
+                        <option value="1">Minneapolis</option>
+                        <option value="2">St. Paul</option>
+                        <option value="3">Maplewood</option>
+                    </select>
                 </div>
-            </div>
-            <!-- Search button -->
-            <div class="search-event">
-                <button type="submit" class="btn btn-primary">Search</button>
-            </div>
+                <!-- Date drop-down -->
+                <div class="input-field search-event" id="location">
+                    <select>
+                        <option value="" disabled selected>Choose your Date</option>
+                        <option value="1">Today</option>
+                        <option value="2">Tomorrow</option>
+                        <option value="3">Next Week</option>
+                    </select>
+                </div>
+                <!-- Check boxes Free + Remember Me -->
+                <div class="search-event">
+                    <div class="checkBox">
+                        <input type="checkbox" id="free" />
+                        <label for="free">
+                            Free
+                        </label>
+                    </div>
+                </div>
+                <!-- Search button -->
+                <div class="search-event">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
         </form>
-    </div>
-    <br><br><br><br>
-    <!-- Catergories + Images + Links to Catergories -->
-    <div class="row" id="imgLinks">
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/sportingevents.jpg">
-                    <span class="card-title">Sporting Events</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Catergories + Images + Links to Catergories -->
+        <div class="row" id="imgLinks">
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/sportingevents.jpg">
+                        <span class="card-title">Sporting Events</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/concerts2.jpg">
+                        <span class="card-title">Concerts</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/museum.jpg">
+                        <span class="card-title">Museums & Galleries</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/restaurant.jpg">
+                        <span class="card-title">Restaurants</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m2">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="assets/images/top-10.jpg">
+                        <span class="card-title">Top 10</span>
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/concerts2.jpg">
-                    <span class="card-title">Concerts</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/museum.jpg">
-                    <span class="card-title">Museums & Galleries</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/restaurant.jpg">
-                    <span class="card-title">Restaurants</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img src="assets/images/top-10.jpg">
-                    <span class="card-title">Top 10</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <!-- Can use Materialize for Js -->
-    <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <!-- Can use Materialize for Js -->
+        <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
 </body>
 
 </html>

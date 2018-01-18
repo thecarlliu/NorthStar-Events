@@ -26,19 +26,6 @@
 	margin-top: 1%;
 }
 
-#categories {
-	width: 10%;
-}
-
 #location {
-	width: 10%;
-}
-
-#date {
-	margin-top: 1%;
-	cursor: pointer;
-}
-
-input::-webkit-input-placeholder {
-color: black !important;
+	width: 15%;
 }
