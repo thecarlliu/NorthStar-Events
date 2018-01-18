@@ -1,4 +1,4 @@
-/* Colors */
+ Colors */
 :root {
   --main-color: ;
   --accent-color: ;
@@ -22,6 +22,8 @@
  /* Search Input */
 .search-event {
 	float: left;
+	margin-right: 2%;
+	margin-top: 1%;
 }
 
 #categories {
@@ -32,3 +34,11 @@
 	width: 10%;
 }
 
+#date {
+	margin-top: 1%;
+	cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+color: black !important;
+}
