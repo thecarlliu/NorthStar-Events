@@ -3,19 +3,30 @@
 
 //_____________________________SEARCH BOX VARIABLES______________________________
 //takes input value from the search term box
-var searchTerm = $("#search-box").input().val().trim();
+var searchTerm = $("#search-box").val().trim();
 //takes input value from the search dropdown box's location choice
-var searchLocation = $("#search-dropdown-location").input().val();
+var searchLocation = $("#search-dropdown-location").val();
 //takes input value from the search dropdown box's date choice
-var searchDate = $("#search-dropdown-date").input().val();
+var searchDate = $("#search-dropdown-date").val();
 //takes input value from the search dropdown box's category choice
-var searchCategory = $("#search-dropdown-category").input().val();
+var searchCategory = $("#search-dropdown-category").val();
 //makes our search button into a variale
 var searchBtn = $("#search-button");
 //______________________________________________________________________________
 
 var searchQuery;
-//need to put together search inputs and output the whole search input as "searchQuery."
+
+//__________________________________EVENTBRITE API_________________________________
+
+var anonToken = "VGEU2SNWNEOVQCJBFGK4";
+var personalToken = "5W7LA2ZWEN54SKLEAPJ5";
+var apiKey = "5QT4AAQPSR7LV42RXO";
+var clientURL = "https://www.eventbrite.com/oauth/authorize?response_type=token&client_id="+clientKey;
+var clientKey = apiKey;
+var queryURL = "https://www.eventbriteapi.com/v3/users/me/?token="+token;
+var token = personalToken;
+
+console.log(queryURL);
 
 //need function that takes in the whole search input and returns the search results
 
