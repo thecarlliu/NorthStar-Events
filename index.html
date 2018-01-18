@@ -6,21 +6,39 @@
 <head>
     <meta charset="UTF-8">
     <title>NorthStar Events</title>
+
+    <!-----CSS Pages----->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-------- Materialize---->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-    <link href="https://fonts.googleapis.com/css?family=Englebert" rel="stylesheet">
+
+    <!-----Google Fonts----->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Damion|Satisfy|Sedgwick+Ave+Display|Shadows+Into+Light" rel="stylesheet">
+
+
+    <!----Shortcut Icon---->
     <link rel="shortcut icon" type="image/png" href="assets/images/northstar.png">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <!-- Logo + Slogan -->
-    <div class="jumbotron">
-        <h1 id="logo">NorthStar Events</h1>
-        <br>
-        <br>
-        <p id="slogan">No excuse. Get out and enjoy life! </p>
-    </div>
+
+
+
+        <div class="background">
+            <div class="transbox">
+                <h2 id="logo">NorthStar<img id="star" src="assets/images/star.png" height=100px>Events</h2>
+                <h2 id="slogan">No Excuses. Get Out and Enjoy Life.</h2>
+            </div>
+        </div>
+
+
+
     <br>
     <br>
     <!-- Search-form -->
@@ -72,56 +90,52 @@
                     <button type="submit" class="btn btn-primary">Search</button>
                 </div>
         </form>
+    </div>
+    <br><br><br><br>
+    <!-- Catergories + Images + Links to Catergories -->
+    <div class="row" id="imgLinks">
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img id ="nav-image" src="assets/images/sportingevents.jpg">
+                    <span class="card-title">Sporting Events</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!-- Catergories + Images + Links to Catergories -->
-        <div class="row" id="imgLinks">
-            <div class="col m2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/sportingevents.jpg">
-                        <span class="card-title">Sporting Events</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                    </div>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img id ="nav-image" src="assets/images/concerts2.jpg">
+                    <span class="card-title">Concerts</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
                 </div>
             </div>
-            <div class="col m2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/concerts2.jpg">
-                        <span class="card-title">Concerts</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                    </div>
+        </div>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img id ="nav-image" src="assets/images/museum.jpg">
+                    <span class="card-title">Museums & Galleries</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
                 </div>
             </div>
-            <div class="col m2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/museum.jpg">
-                        <span class="card-title">Museums & Galleries</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                    </div>
+        </div>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img id="nav-image" src="assets/images/restaurant.jpg">
+                    <span class="card-title">Restaurants</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
                 </div>
             </div>
-            <div class="col m2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/restaurant.jpg">
-                        <span class="card-title">Restaurants</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col m2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/images/top-10.jpg">
-                        <span class="card-title">Top 10</span>
-                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">√</i></a>
-                    </div>
+        </div>
+        <div class="col m2">
+            <div class="card">
+                <div class="card-image">
+                    <img id="nav-image" src="assets/images/top-10.jpg">
+                    <span class="card-title">Top 10</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
                 </div>
             </div>
         </div>
