@@ -1,71 +1,67 @@
-/* Colors */
+/*color palette
+========================================
+light orange- #F6BA4D
+darker orange - #E16C29
+Darkest Blue - #0D4479
+Medium blue - #0BA2AE
+light blue - #6aCBD3
+Lightest Blue - #D8E8DF*/
+
+/*Fonts
+===================================
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Damion', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
 :root {
   --main-color: ;
   --accent-color: ;
 }
+/* The rest of the CSS file 
+#foo h1 {
+  color: var(--main-color); 
+}*/
 
 /* Logo + Slogan*/
-#logo {
-	font-family: 'Englebert', sans-serif;
+#nav-bar {
+    height: 900px;
+}
+
+.brand-logo {
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 90px;
 }
 
-#slogan {
-	float: right;
-	font-weight: bolder;
+.slogan {
+	font-family: 'Lato', sans-serif;
+	font-size: 45px;
 }
 
  /* Search Input */
-input {
+.search-event {
 	float: left;
+	margin-right: 2%;
+	margin-top: 1%;
 }
 
-.my-1 {
-	float: left;
+#categories {
+	width: 10%;
 }
 
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+#location {
+	width: 10%;
 }
 
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+#date {
+	margin-top: 1%;
+	cursor: pointer;
 }
 
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-
-/*  GRID OF FIVE  */
-.span_5_of_5 {
-	width: 100%;
-}
-.span_4_of_5 {
-	width: 79.68%;
-}
-.span_3_of_5 {
-	width: 59.36%;
-}
-.span_2_of_5 {
-	width: 39.04%;
-}
-.span_1_of_5 {
-	width: 18.72%;
-}
-
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+input::-webkit-input-placeholder {
+color: black !important;
 }
