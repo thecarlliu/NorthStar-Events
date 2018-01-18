@@ -1,22 +1,45 @@
- Colors */
+/*color palette
+========================================
+light orange- #F6BA4D
+darker orange - #E16C29
+Darkest Blue - #0D4479
+Medium blue - #0BA2AE
+light blue - #6aCBD3
+Lightest Blue - #D8E8DF*/
+
+/*Fonts
+===================================
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Damion', cursive;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
 :root {
   --main-color: ;
   --accent-color: ;
 }
 /* The rest of the CSS file 
 #foo h1 {
-  color: var(--main-color);
+  color: var(--main-color); 
 }*/
 
 /* Logo + Slogan*/
-#logo {
-	font-family: 'Englebert', sans-serif;
+#nav-bar {
+    height: 900px;
+}
+
+.brand-logo {
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 90px;
 }
 
-#slogan {
-	float: right;
-	font-weight: bolder;
+.slogan {
+	font-family: 'Lato', sans-serif;
+	font-size: 45px;
 }
 
  /* Search Input */
