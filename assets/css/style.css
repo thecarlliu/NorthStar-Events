@@ -86,9 +86,18 @@ div.transbox p {
 	width: 15%;
 }
 
-#nav-image {
-    height: 200px;
+.card-title {
+  color: #E16C29;
+}
+
+.nav-image {
+    height: 175px;
     width: 100%;
     opacity: .85;
+}
+
+.nav-image:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
