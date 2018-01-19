@@ -82,13 +82,18 @@ div.transbox p {
 	margin-top: 1%;
 }
 
+/*.checkbox {
+	float: right;
+
+}*/
+/*
 #location {
 	width: 15%;
-}
+}*/
 
 #nav-image {
-    height: 200px;
-    width: 100%;
+    height: 28vmin;
+    width: 50vmin;
     opacity: .85;
 }
 
