@@ -82,17 +82,18 @@ div.transbox p {
 	margin-top: 1%;
 }
 
+/*.checkbox {
+	float: right;
+
+}*/
+/*
 #location {
 	width: 15%;
-}
-
-.card-title {
-  color: #E16C29;
-}
+}*/
 
 .nav-image {
-    height: 175px;
-    width: 100%;
+    height: 28vmin;
+    width: 50vmin;
     opacity: .85;
 }
 
