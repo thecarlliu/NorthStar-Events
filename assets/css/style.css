@@ -32,10 +32,10 @@ font-family: 'Lato', sans-serif;
   color: var(--main-color); 
 }*/
 
-body {
+/*body {
   font-family: 'Lato', sans-serif;
   color: #000;
-
+}*/
 /* Logo + Slogan*/
 div.background {
   background: url("../images/minneapolis_mississippi_river.jpg") repeat;
@@ -82,7 +82,7 @@ div.transbox p {
 }
   
 /*nav iamges*/
-.card-title {
+/*.card-title {
   position: absolute;
   text-align: center;
   color: black; 
@@ -94,18 +94,18 @@ div.transbox p {
   opacity: .60;
   padding-left: 20px;
   padding-right: 20px;
-}
+}*/
 
-.nav-image {
+#Derek {
     height: 28vmin;
     width: 50vmin;
     opacity: .85;
 }
   
-.nav-image:hover {
+/*.nav-image:hover {
     filter:drop-shadow(8px 8px 10px gray);
      -webkit-transition: all 5s ease;
     -moz-transition: all 5s ease;
     -o-transition: all 5s ease;
-}
+}*/
 
