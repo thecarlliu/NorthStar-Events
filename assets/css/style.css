@@ -83,8 +83,18 @@ div.transbox p {
     margin-top: 1%;
 }
 
-#nav-image {
+.nav-image {
     height: 28vmin;
     width: 50vmin;
     opacity: .85;
+<<<<<<< HEAD
 }
+=======
+}
+
+.nav-image:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+>>>>>>> df62ba8c5b0dac8295d67cea6c73cdd16baa3dd7
