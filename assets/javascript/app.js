@@ -14,66 +14,73 @@ $(document).ready(function() {
     	});
   });
 
-//__________________________________EVENTBRITE API_________________________________
 
-//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _Search Query Functions_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _Weather API_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-//defines our search query variables(parameters), converting them appropriately
-function updateQuery() {
-	//takes input value from the search term box
-	var searchTerm = $("#search-box").val();
-	//takes input value from the search dropdown box's location choice
-	//every time user makes a location choice, ourprogram will redefine the location or list of locations for the events to be shown once the query is submitted.
-	var searchLocation = $("#search-location").val();
-	//takes input value from the search dropdown box's date choice
-	//every time the user makes a date choice, our program will take that date(s), depending on the range, convert that into a input that the query will be able to take.
-	var searchDate = convertDate($("#search-date").val());
-	//filters free events
-	var checkFree = $("#checkbox-free").val();
-	//makes our search button into a variale
-	var searchBtn = $("#search-button");
-}
+var weatherKey = "c18a468eed25695d40abc56ea6271f74";
+var minneapolisId = "5037649";
+var maplewoodId = "5036588";
+var saintPaulId = "5048033";
+var minnetonkaId = "5037784";
 
-//Converts selected date(s) and converts to an input ready to be received by our queryURL
-function convertDate(inputDateRange) {
-	inputDateRange = inputDateRange.toLowerCase();
-	
-	inputDateRange.replace("t", "_");
+var weatherURL = "http://api.openweathermap.org/data/2.5/group?id="+minneapolisId+","+maplewoodId+","+saintPaulId+","+minnetonkaId+"&units=imperial"+"&APPID="+weatherKey;
 
-	console.log(inputDateRange);
-	return inputDateRange;
-};
+var weatherBox = $("#weather-box");
 
-console.log(convertDate("This Week"));
+$(document).ready(function() {
+	//ajax
+	$.ajax({
+        url: weatherURL,
+        method: "GET"
+    }).done(function(result) {
+        $("#weather-box").empty();
+        console.log(result);
+        console.log(result.list[0]);
 
-// //_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _Submitting the Query_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-// var personalToken = "5W7LA2ZWEN54SKLEAPJ5";
+        var weather1;
+		var weather2;
+		var weather3;
+		var weather4;
 
-// $(searchBtn).on("click", function() {
-// 	//redefine our search parameters and reset the queryURL;
-// 	updateQuery()
-// 	//ajax
-// });
+		var weather = [weather1, weather2, weather3, weather4];
+		var currentTemps = [];
+		var cityNames = [];
+		var typesWeather = [];
 
-// var queryURL = "https://www.eventbriteapi.com/v3/events/search/?token="+personalToken+"&q="+searchTerm+"&location.address="+searchLocation+"$location.within=10mi"+searchDate;
+		for (i=0; i<result.list.length; i++) {
+			var currentTemp = result.list[i].main.temp;
+			currentTemps.push(currentTemp);
+			var cityName = result.list[i].name;
+			cityNames.push(cityName);
+			var typeWeather = result.list[i].weather[0].description;
+			typesWeather.push(typeWeather);
 
-// console.log(queryURL);
+			console.log("current temp is "+currentTemp);
+			console.log("city is "+cityName);
+			console.log("weather is like "+typeWeather);
 
-//   //need to put together search inputs and output the whole search input as "searchQuery."
+			weather[i] = "Weather in "+cityNames[i]+ " is: "+typesWeather[i]+" Current Temperature: "+currentTemps[i]+"˚F";
+			var test = weather[i];
+			console.log(test);
+		}
+		var minneapolisWeather = $("<div>", {
+			text: weather[0]
+		});
+		var maplewoodWeather = $("<div>", {
+			text: weather[1]
+		});
+		var saintPaulWeather = $("<div>", {
+			text: weather[2]
+		});
+		var minnetonkaWeather = $("<div>", {
+			text: weather[3]
+		});
 
-//   //need function that takes in the whole search input and returns the search results
+		weatherBox.append(minneapolisWeather, maplewoodWeather, saintPaulWeather, minnetonkaWeather); 
+    });
+});
 
-//   //need function that takes search results and outputs "results"(pictures+links) appropriately. would also get rid of the category images, leaving only the page header, search box, and results to see.
 
-//   //Notes: search function is dependent on chosen date range, which must be accounted for through the API somehow
-
-//   //if user presses logo, returns to page with default appearance with categories, etc.
-
-// //___________________________________Find Events Base On Category_______________________
-// var categoryInput;
-// var queryURL2 = "https://wwww.eventbriteapi.com/v3/events/search/?token="+personalToken+"&categories="+categoryInput;
-
-// console.log(queryURL2);
 
 
 
