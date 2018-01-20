@@ -1,60 +1,25 @@
 <!-- Our project "NorthStar Events" is an event finder website specifically catering towards events in Minnesota that allows people to view the weather and then search appropriate local events by keywords and then schedule those events via Google Calendar. Created by: Paul Prokosch, Derek Frand, Derek Jacobson, Alycia Riley, Carl Liu. -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- CARL WAS HERE -->
 
 <head>
     <meta charset="UTF-8">
     <title>NorthStar Events</title>
-    
-    <!--CSS Pages-->
+    <!-- CSS Pages -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!--Materialize-->
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection"/>
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Damion|Satisfy|Sedgwick+Ave+Display|Shadows+Into+Light" rel="stylesheet">
-    
-    
-    <!--Shortcut Icon-->
-
-    <!--CSS Pages-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Materialize-->
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection"/>
-
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Damion|Satisfy|Sedgwick+Ave+Display|Shadows+Into+Light" rel="stylesheet">
-    
-    
-    <!--Shortcut Icon-->
-
-
-    <!--CSS Pages-->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--Materialize-->
+    <!-- Materialize -->
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-
-    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Damion|Satisfy|Sedgwick+Ave+Display|Shadows+Into+Light" rel="stylesheet">
-
-
-    <!--Shortcut Icon-->
+    <!-- Shortcut Icon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/northstar.png">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <!-- Logo + Slogan -->
-
     <div class="background">
         <div class="transbox">
             <h2 id="logo">NorthStar<img id="star" src="assets/images/star.png" height=100px>Events</h2>
@@ -66,17 +31,20 @@
     <br>
     <div id="weather-box">
     </div>
-
+    <br>
+    <br>
+  
+    <!-- Search-form -->
     <div class="row search">
         <form action="#">
             <!-- Search Box -->
             <div class="row">
-                <div class="input-field col s2">
+                <div class="input-field col s12 m6 l2">
                     <input id="input_text" type="text" data-length="10">
                     <label for="input_text">Search</label>
                 </div>
                 <!-- Location drop-down -->
-                <div class="input-field search-event" id="location">
+                <div class="input-field search-event col s12 m6 l2" id="location">
                     <select multiple>
                         <option value="" disabled selected>Choose your Location</option>
                         <option value="1">Minneapolis</option>
@@ -87,7 +55,7 @@
                     </select>
                 </div>
                 <!-- Date drop-down -->
-                <div class="input-field search-event" id="location">
+                <div class="input-field search-event col s12 m6 l2" id="date">
                     <select>
                         <option value="" disabled selected>Choose your Date</option>
                         <option value="1">Today</option>
@@ -95,23 +63,21 @@
                         <option value="3">Next Week</option>
                     </select>
                 </div>
-                <!-- Check boxes Free + Remember Me -->
-                <div class="search-event">
-                    <div class="checkBox">
-                        <input type="checkbox" id="free" />
-                        <label for="free">
-                            Free
-                        </label>
-                    </div>
-                </div>
-                <!-- Search button -->
-                <div class="search-event">
+                <!-- Check boxes Free + Search button -->
+                <div class="search-event checkBox col s12 m6 l2">
                     <button type="submit" class="btn btn-primary">Search</button>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="free" />
+                    <label for="free">
+                        Free
+                    </label>
                 </div>
-
+          </div>
         </form>
     </div>
     <br><br><br><br>
+  
     <div id="searchResults">
     </div>
     <!-- Catergories + Images + Links to Catergories -->
@@ -120,57 +86,50 @@
             <div class="card">
                 <div class="card-image">
 
-                    <img id ="nav-image" src="assets/images/sportingevents.jpg">
-                    <span class="card-title">Sporting Events</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5 category-btn" id="card1"><i class="material-icons">√</i></a>
+                    <img id ="Derek" src="assets/images/sportingevents.jpg">
+                    <span class="card-title black-text">Sports & Fitness</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card1"><i class="material-icons">event_seat</i></a>
 
                 </div>
             </div>
         </div>
-        <div class="col m2">
+        <div class="col">
             <div class="card">
                 <div class="card-image">
 
-                    <img id ="nav-image" src="assets/images/concerts2.jpg">
-                    <span class="card-title">Concerts</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5 category-btn" id="card2"><i class="material-icons">√</i></a>
+                    <img id ="Derek" src="assets/images/concerts2.jpg">
+                    <span class="card-title black-text">Music</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card2"><i class="material-icons">local_activity</i></a>
 
                 </div>
             </div>
         </div>
-        <div class="col m2">
+        <div class="col">
             <div class="card">
                 <div class="card-image">
 
-                    <img id ="nav-image" src="assets/images/museum.jpg">
-                    <span class="card-title">Museums & Galleries</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5 category-btn" id="card3"><i class="material-icons">√</i></a>
+                    <img id ="Derek" src="assets/images/museum.jpg">
+                    <span class="card-title black-text">Visual Arts & Performances</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card3"><i class="material-icons">location_city</i></a>
 
                 </div>
             </div>
         </div>
-        <div class="col m2">
+        <div class="col">
             <div class="card">
                 <div class="card-image">
 
-                    <img id="nav-image" src="assets/images/restaurant.jpg">
-                    <span class="card-title">Restaurants</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5 category-btn" id="card4"><i class="material-icons">√</i></a>
+                    <img id="Derek" src="assets/images/restaurant.jpg">
+                    <span class="card-title black-text">Food & Drink</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card4"><i class="material-icons">local_dining</i></a>
 
                 </div>
             </div>
         </div>
-        <div class="col m2">
-            <div class="card">
-                <div class="card-image">
-                    <img id="nav-image" src="assets/images/top-10.jpg">
-                    <span class="card-title">Top 10</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light amber darken-5"><i class="material-icons">√</i></a>
-                </div>
-            </div>
-        </div>
+        
         <div id="last-viewed">
         </div>
+      
         <!-- JQuery Script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- FireBase Script -->
@@ -179,6 +138,7 @@
         <script type="text/javascript" src="assets/javascript/app.js"></script>
         <!-- Can use Materialize for Js -->
         <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
+      
 </body>
 
 </html>
