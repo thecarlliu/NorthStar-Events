@@ -36,9 +36,6 @@ body {
 }
 
 /* Logo + Slogan*/
-
-
-
 div.background {
   background: url("../images/minneapolis_mississippi_river.jpg") repeat;
   height:300px;
@@ -67,9 +64,7 @@ div.transbox p {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 90px;
   display: inline;
-    
-    
-}
+   }
 
 #slogan {
 	font-size: 25px;
@@ -83,10 +78,6 @@ div.transbox p {
 	float: left;
 	margin-right: 2%;
 	margin-top: 1%;
-}
-
-#location {
-	width: 15%;
 }
 
 /*nav iamges*/
@@ -105,12 +96,9 @@ div.transbox p {
 }
 
 .nav-image {
-  height: 175px;
-  width: 100%;
-  opacity: .85;
-
-
-
+    height: 28vmin;
+    width: 50vmin;
+    opacity: .85;
 }
 
 .nav-image:hover {
@@ -118,6 +106,5 @@ div.transbox p {
      -webkit-transition: all 5s ease;
     -moz-transition: all 5s ease;
     -o-transition: all 5s ease;
-
 }
 
