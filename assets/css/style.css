@@ -9,6 +9,7 @@ Lightest Blue - #D8E8DF - blue lighten-5
 
 */
 
+
 /*Fonts
 ===================================
 font-family: 'Sedgwick Ave Display', cursive;
@@ -21,9 +22,11 @@ font-family: 'Lato', sans-serif;
 */
 
 :root {
-  --main-color: ;
-  --accent-color: ;
+    --main-color: ;
+    --accent-color: ;
 }
+
+
 /* The rest of the CSS file 
 #foo h1 {
   color: var(--main-color); 
@@ -32,8 +35,6 @@ font-family: 'Lato', sans-serif;
 body {
   font-family: 'Lato', sans-serif;
   color: #000;
-
-}
 
 /* Logo + Slogan*/
 div.background {
@@ -48,23 +49,23 @@ div.transbox {
   margin-top: 180px;
   margin-bottom: 0px;
   background-color: #ddd;
-
   opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  filter: alpha(opacity=60);
+    /* For IE8 and earlier */
 }
 
 div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 
 
 #logo {
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 90px;
-  display: inline;
-   }
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90px;
+    display: inline;
+}
 
 #slogan {
 	font-size: 25px;
@@ -73,13 +74,13 @@ div.transbox p {
   line-height: 150px;
 }
 
- /* Search Input */
+/* Search Input */
 .search-event {
-	float: left;
-	margin-right: 2%;
-	margin-top: 1%;
+    float: left;
+    margin-right: 2%;
+    margin-top: 1%;
 }
-
+  
 /*nav iamges*/
 .card-title {
   position: absolute;
@@ -100,9 +101,9 @@ div.transbox p {
     width: 50vmin;
     opacity: .85;
 }
-
+  
 .nav-image:hover {
-    filter:drop-shadow(8px 8px 10px gray);\
+    filter:drop-shadow(8px 8px 10px gray);
      -webkit-transition: all 5s ease;
     -moz-transition: all 5s ease;
     -o-transition: all 5s ease;
