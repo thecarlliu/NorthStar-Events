@@ -1,34 +1,98 @@
 
-// ----------------------Needed for the Search form------------------------
-  $(document).ready(function() {
+//_______________________________MATERIALIZE_________________________________________
+$(document).ready(function() {
 // Initializes drop-down menus
 	$('select').material_select();
-  });
-  // ------------------------------End of Search form------------------------
+});
 
 
-  //__________________________________SEARCH_FUNCTION______________________________
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _Weather API_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-  //_____________________________SEARCH BOX VARIABLES______________________________
-  //takes input value from the search term box
-  var searchTerm = $("#search-box").input().val().trim();
-  //takes input value from the search dropdown box's location choice
-  var searchLocation = $("#search-dropdown-location").input().val();
-  //takes input value from the search dropdown box's date choice
-  var searchDate = $("#search-dropdown-date").input().val();
-  //takes input value from the search dropdown box's category choice
-  var searchCategory = $("#search-dropdown-category").input().val();
-  //makes our search button into a variale
-  var searchBtn = $("#search-button");
-  //______________________________________________________________________________
+var weatherKey = "c18a468eed25695d40abc56ea6271f74";
+var minneapolisId = "5037649";
+var maplewoodId = "5036588";
+var saintPaulId = "5048033";
+var minnetonkaId = "5037784";
 
-  var searchQuery;
-  //need to put together search inputs and output the whole search input as "searchQuery."
+var weatherURL = "http://api.openweathermap.org/data/2.5/group?id="+minneapolisId+","+maplewoodId+","+saintPaulId+","+minnetonkaId+"&units=imperial"+"&APPID="+weatherKey;
 
-  //need function that takes in the whole search input and returns the search results
+var weatherBox = $("#weather-box");
 
-  //need function that takes search results and outputs "results"(pictures+links) appropriately. would also get rid of the category images, leaving only the page header, search box, and results to see.
+$(document).ready(function() {
+	//ajax
+	$.ajax({
+        url: weatherURL,
+        method: "GET"
+    }).done(function(result) {
+        $("#weather-box").empty();
+        console.log(result);
+        console.log(result.list[0]);
 
-  //Notes: search function is dependent on chosen date range, which must be accounted for through the API somehow
+        var weather1;
+		var weather2;
+		var weather3;
+		var weather4;
 
-  //if user presses logo, returns to page with default appearance with categories, etc.
+		var weather = [weather1, weather2, weather3, weather4];
+		var currentTemps = [];
+		var cityNames = [];
+		var typesWeather = [];
+
+		for (i=0; i<result.list.length; i++) {
+			var currentTemp = result.list[i].main.temp;
+			currentTemps.push(currentTemp);
+			var cityName = result.list[i].name;
+			cityNames.push(cityName);
+			var typeWeather = result.list[i].weather[0].description;
+			typesWeather.push(typeWeather);
+
+			console.log("current temp is "+currentTemp);
+			console.log("city is "+cityName);
+			console.log("weather is like "+typeWeather);
+
+			weather[i] = "Weather in "+cityNames[i]+ " is: "+typesWeather[i]+" Current Temperature: "+currentTemps[i]+"˚F";
+			var test = weather[i];
+			console.log(test);
+		}
+		var minneapolisWeather = $("<div>", {
+			text: weather[0]
+		});
+		var maplewoodWeather = $("<div>", {
+			text: weather[1]
+		});
+		var saintPaulWeather = $("<div>", {
+			text: weather[2]
+		});
+		var minnetonkaWeather = $("<div>", {
+			text: weather[3]
+		});
+
+		weatherBox.append(minneapolisWeather, maplewoodWeather, saintPaulWeather, minnetonkaWeather); 
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
