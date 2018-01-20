@@ -91,9 +91,14 @@ div.transbox p {
 	width: 15%;
 }*/
 
-#nav-image {
+.nav-image {
     height: 28vmin;
     width: 50vmin;
     opacity: .85;
+}
+
+.nav-image:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
