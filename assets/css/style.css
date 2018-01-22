@@ -27,26 +27,21 @@ font-family: 'Lato', sans-serif;
 }
 
 
-/* The rest of the CSS file 
-#foo h1 {
-  color: var(--main-color); 
-}*/
-
-/*body {
+body {
   font-family: 'Lato', sans-serif;
   color: #000;
-}*/
+}
 /* Logo + Slogan*/
 div.background {
   background: url("../images/minneapolis_mississippi_river.jpg") repeat;
-  height:300px;
+  height: 30%;
   width: 100%;
   margin-top: 0px;
   border: 2px solid #000;
 }
 
 div.transbox {
-  margin-top: 180px;
+  margin-top: 10%;
   margin-bottom: 0px;
   background-color: #ddd;
   opacity: 0.6;
@@ -68,44 +63,60 @@ div.transbox p {
 }
 
 #slogan {
-	font-size: 25px;
-  display: inline;
-  float: right;
-  line-height: 150px;
+    font-size: 25px;
+    display: inline;
+    float: right;
+    line-height: 150px;
 }
 
 /* Search Input */
 .search-event {
     float: left;
-    margin-right: 2%;
-    margin-top: 1%;
+    margin-right: 8%;
 }
-  
-/*nav iamges*/
-/*.card-title {
-  position: absolute;
-  text-align: center;
-  color: black; 
-  background-color: #ddd;
-  width: 100%;
-  height:35%;
-  bottom: 20px;
-  right: 20px;
-  opacity: .60;
-  padding-left: 20px;
-  padding-right: 20px;
-}*/
 
-#Derek {
+.search-form {
+ 	border: 4px solid #6aCBD3;
+    box-shadow: 1px 1px 1px 2px #0BA2AE;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-top: 1%;
+    padding-left: 8%;
+    position: relative;
+}
+
+.search-form:before {
+	content: " ";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 2px;
+	bottom: 2px;
+	border: 1px solid #D8E8DF;
+	box-shadow: 2px 2px 2px 2px #0BA2AE;
+}
+
+button.btn {
+	color: grey;
+	box-shadow: 1px 1px 1px 1px #E16C29;
+}
+
+button.btn:before {
+	content: " ";
+	position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	right: 1px;
+	bottom: 1px;
+	border: 1px solid #E16C29;
+	box-shadow: 1px 1px 1px 1px #E16C29;
+}
+
+#navImage {
     height: 28vmin;
     width: 50vmin;
     opacity: .85;
 }
   
-/*.nav-image:hover {
-    filter:drop-shadow(8px 8px 10px gray);
-     -webkit-transition: all 5s ease;
-    -moz-transition: all 5s ease;
-    -o-transition: all 5s ease;
-}*/
-
