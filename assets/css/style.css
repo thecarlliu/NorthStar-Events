@@ -28,24 +28,27 @@ font-family: 'Lato', sans-serif;
 
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #000;
+    font-family: 'Lato', sans-serif;
+    color: #000;
 }
+
+
 /* Logo + Slogan*/
+
 div.background {
-  background: url("../images/minneapolis_mississippi_river.jpg") repeat;
-  height: 30%;
-  width: 100%;
-  margin-top: 0px;
-  border: 2px solid #000;
+    background: url("../images/minneapolis_mississippi_river.jpg") repeat;
+    height: 30%;
+    width: 100%;
+    margin-top: 0px;
+    border: 2px solid #000;
 }
 
 div.transbox {
-  margin-top: 10%;
-  margin-bottom: 0px;
-  background-color: #ddd;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+    margin-top: 10%;
+    margin-bottom: 0px;
+    background-color: #ddd;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
     /* For IE8 and earlier */
 }
 
@@ -69,14 +72,16 @@ div.transbox p {
     line-height: 150px;
 }
 
+
 /* Search Input */
+
 .search-event {
     float: left;
     margin-right: 8%;
 }
 
 .search-form {
- 	border: 4px solid #6aCBD3;
+    border: 4px solid #6aCBD3;
     box-shadow: 1px 1px 1px 2px #0BA2AE;
     margin-right: 5%;
     margin-left: 5%;
@@ -86,37 +91,198 @@ div.transbox p {
 }
 
 .search-form:before {
-	content: " ";
-	position: absolute;
-	z-index: -1;
-	top: 0px;
-	left: 0px;
-	right: 2px;
-	bottom: 2px;
-	border: 1px solid #D8E8DF;
-	box-shadow: 2px 2px 2px 2px #0BA2AE;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px solid #D8E8DF;
+    box-shadow: 2px 2px 2px 2px #0BA2AE;
 }
 
 button.btn {
-	color: grey;
-	box-shadow: 1px 1px 1px 1px #E16C29;
+    color: grey;
+    box-shadow: 1px 1px 1px 1px #E16C29;
 }
 
 button.btn:before {
-	content: " ";
-	position: absolute;
-	z-index: -1;
-	top: 0px;
-	left: 0px;
-	right: 1px;
-	bottom: 1px;
-	border: 1px solid #E16C29;
-	box-shadow: 1px 1px 1px 1px #E16C29;
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    right: 1px;
+    bottom: 1px;
+    border: 1px solid #E16C29;
+    box-shadow: 1px 1px 1px 1px #E16C29;
 }
 
-#navImage {
-    height: 28vmin;
-    width: 50vmin;
-    opacity: .85;
+
+/*Categories + Links*/
+
+.photo {
+    z-index: 3;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    background-color: white;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 5% 5%;
+    top: 5px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition: top 0.7s ease-in-out, background 0.15s ease;
 }
-  
+
+.photo.active {
+    top: -80px;
+}
+
+#category-links {
+    margin-left: 12.5%;
+}
+
+#responsiveSports {
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+#responsiveMusic {
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+#responsiveArt {
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+#responsiveFood {
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+.card {
+    z-index: 1;
+    position: absolute;
+    width: 18em;
+    height: 15em;
+    background-color: #ddd;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+
+.card.active {
+    height: 490px;
+}
+
+.card ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 87px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+
+.card ul.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card i {
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 150px;
+    width: 300px;
+    text-align: left;
+    color: #C7D0E1;
+}
+
+.banner {
+    z-index: 2;
+    position: relative;
+    margin-top: -10em;
+    width: 100%;
+    height: 50%;
+    background-color: #E16C29;
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+}
+
+.banner.active {
+    height: 0;
+}
+
+button.contact {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -15px;
+    width: 100%;
+    height: 35px;
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: white;
+    background-color: #0BA2AE;
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+button.contact:hover {
+    cursor: pointer;
+    background-color: #979da8;
+}
+
+button.contact:focus {
+    outline: 0;
+}
+
+#sports-photo {
+    background-image: url("../images/sportingevents.jpg");
+}
+
+#music-photo {
+    background-image: url("../images/concerts2.jpg");
+}
+
+#art-photo {
+    background-image: url(../images/museum.jpg);
+}
+
+#food-photo {
+    background-image: url(../images/restaurant.jpg);
+}
