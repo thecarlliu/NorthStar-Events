@@ -27,11 +27,129 @@ font-family: 'Lato', sans-serif;
 }
 
 
-body {
+/*body {
   font-family: 'Lato', sans-serif;
   color: #000;
 }
+*/
+
+/*NEW BODY*/
+body,
+html {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*display: block;*/
+    /*box-sizing: border-box;*/
+    font-family: 'Lato', sans-serif;
+    color: #000;
+   /* background-color: #;*/
+}
+
+
+/*New SLOGAN*/
+
+.hero {
+    background: url("../images/minneapolis_mississippi_river.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-attachment: local;
+    height: 40%;
+    width: 100%;
+    overflow:hidden;
+    border-bottom: 3px solid black;
+}
+
+.inner-text {
+    position: relative;
+    top: 60%;
+    height:auto;
+    transform: translateY(-50%);
+    font-size: 50px;
+   /* @media only screen and (min-width: 320px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media only screen and (min-width: 400px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media only screen and (min-width: 680px) {
+        font-size: 75px;
+    }
+    @media only screen and (min-width: 950px) {
+        font-size: 100px;
+    }*/
+}
+
+.p1 {
+    display: inline-block;
+    float: left;
+    font-family: 'Special Elite', cursive;
+    word-spacing: -25px;
+    font-size: 2em;
+    letter-spacing: 10px;
+    color: #ddd;
+    margin: 0;
+    line-height: 2.3;
+  /*  @media only screen and (max-width: 465px) {
+        display: block;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }*/
+}
+
+.p2 {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+    letter-spacing: -1px;
+    line-height: 5;
+    color: #4fc3f7;
+    /*@media only screen and (max-width: 465px) {
+        position: relative;
+        top: 0.6em;
+    }*/
+}
+
+.p3 {
+    display: inline-block;
+    float: right;
+    font-size: .5em;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 10;
+    color: #E16C29;
+   /* @media only screen and (max-width: 465px) {
+        position: relative;
+        top: 0.6em;
+    }*/
+}
+
+#transform {
+    color: #ddd;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Logo + Slogan*/
+/*
 div.background {
   background: url("../images/minneapolis_mississippi_river.jpg") repeat;
   height: 30%;
@@ -46,9 +164,9 @@ div.transbox {
   background-color: #ddd;
   opacity: 0.6;
   filter: alpha(opacity=60);
-    /* For IE8 and earlier */
-}
-
+     For IE8 and earlier 
+}*/
+/*
 div.transbox p {
     margin: 5%;
     font-weight: bold;
@@ -67,7 +185,7 @@ div.transbox p {
     display: inline;
     float: right;
     line-height: 150px;
-}
+}*/
 
 /* Search Input */
 .search-event {
@@ -114,13 +232,7 @@ button.btn:before {
 	box-shadow: 1px 1px 1px 1px #E16C29;
 }
 
-#navImage {
-    height: 28vmin;
-    width: 50vmin;
-    opacity: .85;
-}
-
-/*+++++++++++++++++++++++++++*/
+/*+++++++++++++New Cards++++++++++++++*/
 
 .photo {
     z-index: 3;
