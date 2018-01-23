@@ -35,18 +35,19 @@
     <br>
   
     <!-- Search-form -->
-    <div class="row search">
+    <div class="search-form">
         <form action="#">
             <!-- Search Box -->
-            <div class="row">
-                <div class="input-field col s12 m6 l2">
+            <div class="row" style="color:#6aCBD3;">
+                <div class="input-field search-event col s12 m6 l2">
+                    <i class="material-icons prefix">mode_edit</i>
                     <input id="input_text" type="text" data-length="10">
                     <label for="input_text">Search</label>
                 </div>
                 <!-- Location drop-down -->
                 <div class="input-field search-event col s12 m6 l2" id="location">
                     <select multiple>
-                        <option value="" disabled selected>Choose your Location</option>
+                        <option value="" disabled selected>Choose Location</option>
                         <option value="1">Minneapolis</option>
                         <option value="2">St. Paul</option>
                         <option value="3">Maplewood</option>
@@ -57,7 +58,7 @@
                 <!-- Date drop-down -->
                 <div class="input-field search-event col s12 m6 l2" id="date">
                     <select>
-                        <option value="" disabled selected>Choose your Date</option>
+                        <option value="" disabled selected>Choose Date</option>
                         <option value="1">Today</option>
                         <option value="2">Tomorrow</option>
                         <option value="3">Next Week</option>
@@ -65,7 +66,7 @@
                 </div>
                 <!-- Check boxes Free + Search button -->
                 <div class="search-event checkBox col s12 m6 l2">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-primary waves-effect waves-light amber lighten-1">Search</button>
                     <br>
                     <br>
                     <input type="checkbox" id="free" />
@@ -81,12 +82,12 @@
     <div id="searchResults">
     </div>
     <!-- Catergories + Images + Links to Catergories -->
+
     <div class="row" id="category-links">
-        <div class="col m2">
+        <div class="col">
             <div class="card">
                 <div class="card-image">
-
-                    <img id ="Derek" src="assets/images/sportingevents.jpg">
+                    <img id ="navImage" src="assets/images/sportingevents.jpg">
                     <span class="card-title black-text">Sports & Fitness</span>
                     <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card1"><i class="material-icons">event_seat</i></a>
 
@@ -96,8 +97,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-image">
-
-                    <img id ="Derek" src="assets/images/concerts2.jpg">
+                    <img id ="navImage" src="assets/images/concerts2.jpg">
                     <span class="card-title black-text">Music</span>
                     <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card2"><i class="material-icons">local_activity</i></a>
 
@@ -107,8 +107,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-image">
-
-                    <img id ="Derek" src="assets/images/museum.jpg">
+                    <img id ="navImage" src="assets/images/museum.jpg">
                     <span class="card-title black-text">Visual Arts & Performances</span>
                     <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card3"><i class="material-icons">location_city</i></a>
 
@@ -118,15 +117,15 @@
         <div class="col">
             <div class="card">
                 <div class="card-image">
-
-                    <img id="Derek" src="assets/images/restaurant.jpg">
+                    <img id="navImage" src="assets/images/restaurant.jpg">
                     <span class="card-title black-text">Food & Drink</span>
                     <a class="btn-floating halfway-fab waves-effect waves-light amber lighten-1 category-btn" id="card4"><i class="material-icons">local_dining</i></a>
 
                 </div>
             </div>
         </div>
-        
+    </div>
+
         <div id="last-viewed">
         </div>
       
