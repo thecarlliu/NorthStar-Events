@@ -50,7 +50,7 @@ $(document).ready(function() {
       console.log("city is "+cityName);
       console.log("weather is like "+typeWeather);
 
-      weather[i] = "Weather in "+cityNames[i]+ " is: "+typesWeather[i]+" Current Temperature: "+currentTemps[i]+"˚F";
+      weather[i] = "Weather in "+cityNames[i]+ " is: "+typesWeather[i]+", Current Temperature: "+currentTemps[i]+"˚F";
       var test = weather[i];
       console.log(test);
     }
@@ -206,7 +206,7 @@ lastViewed.on("click", function() {
 });
 $(document).ready(function() {
   database.ref().on("value", function(snapshot) {
-    lastViewed.text("Your Last viewed link was: "+snapshot.val().lastViewedLink)
+    lastViewed.text("Last viewed link: "+snapshot.val().lastViewedLink)
   });
 });
 
