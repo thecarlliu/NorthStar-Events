@@ -58,8 +58,6 @@ html {
 
 .inner-text {
     position: relative;
-    top: 60%;
-    height: auto;
     transform: translateY(-50%);
     font-size: 3rem;
 }
@@ -67,13 +65,14 @@ html {
 .p1 {
     display: inline-block;
     float: left;
+    padding-top: 12%;
     font-family: 'Special Elite', cursive;
     word-spacing: -0.1rem;
     font-size: 1.5em;
     letter-spacing: 0.1rem;
     color: #ddd;
     margin: 0;
-    line-height: ;
+    
 }
 
 .p2 {
@@ -83,7 +82,7 @@ html {
     font-family: 'Special Elite', cursive;
     font-size: 1em;
     letter-spacing: -0.1rem;
-    line-height: 5;
+    padding-top: 13%;
     color: #4fc3f7;
 }
 
@@ -93,7 +92,7 @@ html {
     font-size: .5em;
     font-weight: 400;
     letter-spacing: .1em;
-    line-height: 10;
+    padding-top: 15%;
     color: #E16C29;
 }
 
@@ -101,7 +100,6 @@ html {
     color: #ddd;
     font-weight: 700;
 }
-
 
 
 /* Weather Box */
