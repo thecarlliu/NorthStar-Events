@@ -106,11 +106,12 @@ html {
 
 /* Weather Box */
 
-#weather-box {
-    display: inline-block;
-    font-size: 18px;
-}
+#weatherBox {
+    font-size: 1.3rem;
+    background-color: #0BA2AE;
+    /*width: 50vw;*/
 
+}
 
 /* Search Input */
 
@@ -140,7 +141,12 @@ html {
 
 button.btn {
     color: grey;
-    box-shadow: 1px 1px 1px 1px #E16C29;
+    transition: box-shadow 1s, transform 3s;
+}
+
+button.btn:hover {
+    transform: translate(1px,1px);
+    transition: box-shadow 1s, transform 2s;
 }
 
 button.btn:before {
@@ -325,3 +331,10 @@ button.contact:focus {
 #food-photo {
     background-image: url(../images/restaurant.jpg);
 }
+
+/*Last Viewed*/
+#lastViewed {
+    font-size: .8rem;
+    background-color: #0BA2AE;
+}
+
