@@ -30,6 +30,7 @@ font-family: 'Lato', sans-serif;
 body {
     font-family: 'Lato', sans-serif;
     color: #000;
+    background-color:floralwhite;
 }
 
 
@@ -72,6 +73,19 @@ div.transbox p {
     line-height: 150px;
 }
 
+/* Weather Box */
+ #weather-box {
+    display: inline-block;
+   font-size:18px;
+}
+
+/* Search Input */
+
+.search-event {
+    float: left;
+    margin-right: 8%;
+}
+
 
 /* Search Input */
 
@@ -81,8 +95,6 @@ div.transbox p {
 }
 
 .search-form {
-    border: 4px solid #6aCBD3;
-    box-shadow: 1px 1px 1px 2px #0BA2AE;
     margin-right: 5%;
     margin-left: 5%;
     padding-top: 1%;
@@ -98,9 +110,8 @@ div.transbox p {
     left: 0px;
     right: 2px;
     bottom: 2px;
-    border: 1px solid #D8E8DF;
-    box-shadow: 2px 2px 2px 2px #0BA2AE;
 }
+
 
 button.btn {
     color: grey;
@@ -118,6 +129,7 @@ button.btn:before {
     border: 1px solid #E16C29;
     box-shadow: 1px 1px 1px 1px #E16C29;
 }
+
 
 
 /*Categories + Links*/

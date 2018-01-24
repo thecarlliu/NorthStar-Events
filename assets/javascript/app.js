@@ -54,9 +54,10 @@ $(document).ready(function() {
 			var test = weather[i];
 			console.log(test);
 		}
-		var minneapolisWeather = $("<div>", {
+		var minneapolisWeather = $("<p>", {
 			text: weather[0]
 		});
+/*
 		var maplewoodWeather = $("<div>", {
 			text: weather[1]
 		});
@@ -66,8 +67,9 @@ $(document).ready(function() {
 		var minnetonkaWeather = $("<div>", {
 			text: weather[3]
 		});
+*/
 
-		weatherBox.append(minneapolisWeather, maplewoodWeather, saintPaulWeather, minnetonkaWeather); 
+		weatherBox.append(minneapolisWeather/*, maplewoodWeather, saintPaulWeather, minnetonkaWeather*/); 
     });
 });
 
