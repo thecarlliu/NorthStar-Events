@@ -27,63 +27,88 @@ font-family: 'Lato', sans-serif;
 }
 
 
-body {
+/*NEW BODY*/
+
+body,
+html {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*display: block;*/
+    /*box-sizing: border-box;*/
     font-family: 'Lato', sans-serif;
     color: #000;
-    background-color:floralwhite;
+    /* background-color: #;*/
 }
 
 
-/* Logo + Slogan*/
 
-div.background {
-    background: url("../images/minneapolis_mississippi_river.jpg") repeat;
-    height: 30%;
+/*New SLOGAN*/
+
+.hero {
+    background: url("../images/minneapolis_mississippi_river.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-attachment: local;
+    height: 40%;
     width: 100%;
-    margin-top: 0px;
-    border: 2px solid #000;
+    overflow: hidden;
+    border-bottom: 3px solid black;
 }
 
-div.transbox {
-    margin-top: 10%;
-    margin-bottom: 0px;
-    background-color: #ddd;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    /* For IE8 and earlier */
+.inner-text {
+    position: relative;
+    top: 60%;
+    height: auto;
+    transform: translateY(-50%);
+    font-size: 3rem;
 }
 
-div.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+.p1 {
+    display: inline-block;
+    float: left;
+    font-family: 'Special Elite', cursive;
+    word-spacing: -0.1rem;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    color: #ddd;
+    margin: 0;
+    line-height: ;
 }
 
-
-#logo {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 90px;
-    display: inline;
+.p2 {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+    letter-spacing: -0.1rem;
+    line-height: 5;
+    color: #4fc3f7;
 }
 
-#slogan {
-    font-size: 25px;
-    display: inline;
+.p3 {
+    display: inline-block;
     float: right;
-    line-height: 150px;
+    font-size: .5em;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 10;
+    color: #E16C29;
 }
+
+#transform {
+    color: #ddd;
+    font-weight: 700;
+}
+
+
 
 /* Weather Box */
- #weather-box {
+
+#weather-box {
     display: inline-block;
-   font-size:18px;
-}
-
-/* Search Input */
-
-.search-event {
-    float: left;
-    margin-right: 8%;
+    font-size: 18px;
 }
 
 
@@ -129,6 +154,8 @@ button.btn:before {
     border: 1px solid #E16C29;
     box-shadow: 1px 1px 1px 1px #E16C29;
 }
+
+
 
 
 

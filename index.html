@@ -12,7 +12,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Damion|Satisfy|Sedgwick+Ave+Display|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,400i,700,900|Shadows+Into+Light+Two|Special+Elite|Shrikhand" rel="stylesheet">
     <!-- Shortcut Icon -->
     <link rel="shortcut icon" type="image/png" href="assets/images/northstar.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,17 +20,21 @@
 
 <body>
     <!-- Logo + Slogan -->
-    <div class="background">
-        <div class="transbox">
-            <h2 id="logo">NorthStar<img id="star" src="assets/images/star.png" height=100px>Events</h2>
-            <h2 id="slogan">No Excuses. Get Out and Enjoy Life.</h2>
+    <section class="hero">
+        <div class="inner-text">
+            <div class="logo">
+                <p class="p1">NorthStar</p>
+                <p class="p2">events</p>
+            </div>
+            <div class="slogan">
+                <p class="p3">No Excuses. Get out and enjoy <span id="transform"></span></p>
+            </div>
         </div>
-    </div>
+    </section>
     <br>
     <br>
     <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>   <p id="weather-box">weather</p>
     </a>
- 
     <br>
     <br>
     <!-- Search-form -->
@@ -126,16 +130,17 @@
     </div>
     <div id="last-viewed">
     </div>
-    <!--Hero Animation-->
-    <script type="text/javascript" src="assets/javascript/hero.js"></script>
     <!-- JQuery Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <!-- FireBase Script -->
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <!-- Linking our app.js -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
     <!-- Can use Materialize for Js -->
     <script type="text/javascript" src="assets/javascript/materialize.min.js"></script>
+    <!--Hero Animation-->
+    <script type="text/javascript" src="assets/javascript/hero.js"></script>
 </body>
 
 </html>
