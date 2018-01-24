@@ -161,8 +161,14 @@ button.btn:before {
     box-shadow: 1px 1px 1px 1px #E16C29;
 }
 
+/*Dynamic Search Results*/
 
-
+#searchResults {
+    display: inline-block;
+    margin-left: 20%;
+    font-size: 1rem;
+    text-align: center;
+}
 
 
 /*Categories + Links*/
