@@ -50,24 +50,16 @@ $(document).ready(function() {
 			console.log("city is "+cityName);
 			console.log("weather is like "+typeWeather);
 
-			weather[i] = "Weather in "+cityNames[i]+ " is: "+typesWeather[i]+" Current Temperature: "+currentTemps[i]+"˚F";
+			weather[i] =cityNames[i] + ": "   +typesWeather[i]+"  Current Temperature: "+currentTemps[i]+"˚F";
 			var test = weather[i];
 			console.log(test);
 		}
-		var minneapolisWeather = $("<div>", {
+		var minneapolisWeather = $("<p>", {
 			text: weather[0]
 		});
-		var maplewoodWeather = $("<div>", {
-			text: weather[1]
-		});
-		var saintPaulWeather = $("<div>", {
-			text: weather[2]
-		});
-		var minnetonkaWeather = $("<div>", {
-			text: weather[3]
-		});
 
-		weatherBox.append(minneapolisWeather, maplewoodWeather, saintPaulWeather, minnetonkaWeather); 
+
+		weatherBox.append(minneapolisWeather); 
     });
 });
 
